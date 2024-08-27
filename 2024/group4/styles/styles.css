@@ -1,0 +1,718 @@
+/* General Styling */
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #ADD8E6;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+p {
+    line-height: 1.8;
+}
+
+li {
+    line-height: 1.8;
+}
+
+/* NAV STYLING */
+#icon {
+    position: relative;
+    left: 40%;
+    font-size: 32px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: navy;
+    min-height: 5vh;
+    width: auto;
+    border-radius: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: lightblue;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+nav p {
+    margin: 0;
+    text-align: center;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translate(-20%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+.links {
+    margin: 10px;
+    text-align: center;
+    display: block;
+    float: left;
+    transition-duration: 0.5s;
+}
+
+
+
+.links:hover {
+    background-color: lightblue;
+    transition-duration: 0.5s;
+    color: navy;
+    transform: scale(1.1);
+}
+
+.clicked {
+    background-color: lightblue;
+    color: navy;
+    border-radius: 30px;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+
+    cursor: pointer;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    display: none !important;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-link:hover {
+
+    transition-duration: 0.5s;
+    border-radius: 30px;
+    transform: scale(1.2);
+}
+
+/* BODY STYLING FOR MAIN PAGES */
+.header {
+    grid-area: header;
+
+    text-align: center;
+    color: #000080;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.introduction {
+    grid-area: introduction;
+    background-color: navy;
+    color: #ADD8E6;
+    margin: 0.5em;
+    border-radius: 10px;
+}
+
+.introduction h1 {
+    padding: 0.5em;
+}
+
+.introduction p {
+    padding: 1em;
+}
+
+
+.pros,
+.cons {
+    margin: 1em;
+}
+
+.pros {
+    text-align: left;
+    grid-area: pros;
+    background-color: navy;
+    color: lightblue;
+    border-radius: 10px;
+
+
+}
+
+.pros ul {
+    padding: 20px;
+}
+
+.pros li {
+    padding-bottom: 10px;
+}
+
+.pros h1,
+.cons h1 {
+    margin-left: 20px;
+}
+
+.cons {
+    text-align: left;
+    grid-area: cons;
+    background-color: navy;
+    color: #ADD8E6;
+    border-radius: 10px;
+
+
+}
+
+.cons ul {
+    padding: 20px;
+}
+
+.cons li {
+    padding-bottom: 10px;
+}
+
+
+
+#referenceList {
+    display: none;
+    text-align: left;
+
+
+}
+
+#referenceList p {
+
+    margin: 20px;
+    overflow-wrap: break-word;
+}
+
+#showMore {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    border: 3px solid #ADD8E6;
+    background-color: navy;
+    color: #ADD8E6;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#showMore:hover {
+    background-color: #ADD8E6;
+    color: navy;
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+
+
+}
+
+
+.introduction-img {
+    margin: 20px;
+    border-radius: 10px;
+    float: right;
+}
+
+
+
+
+/* References Styling */
+
+.references {
+
+    grid-area: references;
+    text-align: center;
+    background-color: navy;
+    color: #ADD8E6;
+    border-radius: 10px;
+
+
+}
+
+.references a {
+
+    color: #ADD8e6;
+}
+
+.references li {
+    margin-bottom: 20px;
+}
+
+
+
+/* FOOTER STYLING */
+
+footer {
+    text-align: center;
+    grid-area: footer;
+    background-color: navy;
+    color: #ADD8E6;
+    border-radius: 10px;
+
+}
+
+.footer-link {
+    padding-bottom: 20px;
+
+    color: #ADD8E6;
+
+
+}
+
+.footer-link a {
+    color: #ADD8E6;
+
+}
+
+
+/* GRID STYLING */
+.grid-container {
+    padding: 0.5em;
+    display: grid;
+    grid-template-areas:
+        'nav nav nav nav nav nav'
+        'header header header header header header '
+        'introduction introduction introduction introduction introduction introduction'
+        'pros pros pros cons cons cons'
+        'pros pros pros cons cons cons'
+        'pros pros pros cons cons cons'
+        'references references references references references references'
+        'references references references references references references'
+        'footer footer footer footer footer footer';
+
+    gap: 20px;
+
+    margin: auto;
+}
+
+.grid-container-about {
+    display: grid;
+    grid-template-areas:
+        'nav nav nav nav nav nav'
+        'header header header header header header'
+        'card1 card1 card1 card1 card1 profile1'
+        'profile2 card2 card2 card2 card2 card2'
+        'card3 card3 card3 card3 card3  profile3'
+        'profile4 card4 card4 card4 card4 card4'
+        'card5 card5 card5 card5 card5 profile5'
+        'profile6 card6 card6 card6 card6 card6'
+        'footer footer footer footer footer footer';
+    gap: 20px;
+    padding: 0.5em
+}
+
+.grid-container-index {
+    padding: 0.5em;
+    display: grid;
+    grid-template-areas:
+        'nav nav nav nav nav nav'
+        'header header header header header header'
+        'card1 card1 card1 card1 image-1 image-1'
+        'card2 card2 card2 card2 card2 card2'
+        ' references references references references references references'
+        'footer footer footer footer footer footer';
+
+    gap: 10px;
+
+}
+
+/* ABOUT PAGE STYLING */
+.card-3 {
+    background-color: navy;
+    color: #ADD8E6;
+    margin: 20px;
+    border: 2px solid navy;
+    border-radius: 30px;
+
+    grid-area: card3;
+}
+
+.image-3 {
+    grid-area: profile3;
+}
+
+.card-4 {
+    color: #ADD8E6;
+    background-color: navy;
+    text-align: left;
+    margin: 20px;
+    border: 2px solid navy;
+    border-radius: 30px;
+    grid-area: card4
+}
+
+.image-4 {
+    grid-area: profile4;
+}
+
+.card-5 {
+    color: #ADD8E6;
+    background-color: navy;
+    margin: 20px;
+    border: 2px solid navy;
+    border-radius: 30px;
+    grid-area: card5;
+}
+
+.image-5 {
+    grid-area: profile5
+}
+
+
+
+
+
+.image-2 {
+    grid-area: profile2;
+
+
+}
+
+ul li {
+    list-style-type: "-";
+}
+
+#mobile-links {
+    display: none;
+    text-align: center;
+}
+
+.showing {
+    display: block !important
+}
+
+.card-1 {
+    background-color: navy;
+    color: #ADD8E6;
+    margin: 20px;
+    border: 2px solid navy;
+    border-radius: 30px;
+
+    grid-area: card1;
+}
+
+.digitization {
+
+
+    grid-area: image-1;
+
+
+}
+
+.digitization img {
+    border-radius: 10px;
+}
+
+.image-1 {
+    grid-area: profile1;
+}
+
+
+.profile {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* .digitization img {
+    border-radius: 10px;
+} */
+
+.card-1 p,
+.card-1 h1,
+.card-2 p,
+.card-2 h1,
+.card-3 p,
+.card-3 h1,
+.card-4 p,
+.card-4 h1,
+.card-5 p,
+.card-5 h1,
+.card-6 h1,
+.card-6 p {
+    margin: 20px;
+}
+
+.grid-container-about h2 {
+    margin: 20px;
+}
+
+.card1 h1,
+.card2 h1,
+.card-3 h1,
+.card-4 h1,
+.card-5 h1,
+.card6 h1 {
+    font-size: 32px;
+}
+
+
+.card-6 {
+    color: #ADD8E6;
+    background-color: navy;
+    text-align: left;
+    margin: 20px;
+    border: 2px solid navy;
+    border-radius: 30px;
+    grid-area: card6;
+}
+
+.image-6 {
+    grid-area: profile6
+}
+
+
+.card-2 {
+    color: #ADD8E6;
+    background-color: navy;
+    text-align: left;
+    margin: 20px;
+    border: 2px solid navy;
+    border-radius: 30px;
+
+    grid-area: card2;
+}
+
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6 {
+    margin-top: 5vh;
+}
+
+/* This media query is only for if the hamburger menu is closed and it resizes to desktop */
+@media only screen and (min-width : 901px) {
+    #mobile-links {
+        display: none !important
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    .grid-container-index {
+        padding: 0.5em;
+        display: grid;
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'header header header header header header'
+            'card1 card1 card1 image-1 image-1 image-1'
+            'card2 card2 card2 card2 card2 card2'
+            ' references references references references references references'
+            'footer footer footer footer footer footer';
+
+        gap: 10px;
+
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .grid-container-index {
+        padding: 0.5em;
+        display: grid;
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'header header header header header header'
+            'card1 card1 image-1 image-1 image-1 image-1'
+            'card2 card2 card2 card2 card2 card2'
+            ' references references references references references references'
+            'footer footer footer footer footer footer';
+
+        gap: 10px;
+
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .grid-container-index {
+        display: grid;
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'header header header header header header'
+            'card1 card1 card1 card1 card1 card1'
+            'image-1 image-1 image-1 image-1 image-1 image-1'
+            'card2 card2 card2 card2 card2 card2'
+            ' references references references references references references'
+            'footer footer footer footer footer footer';
+
+        gap: 20px;
+        transition-duration: 0.5s;
+    }
+
+    .digitization {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+
+@media only screen and (max-width : 900px) {
+
+    .links {
+        display: none;
+    }
+
+    .icon {
+        display: inline !important;
+        float: right;
+        color: white;
+        font-size: 50px;
+    }
+
+
+
+    .grid-container-index {
+        display: grid;
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'header header header header header header'
+            'card1 card1 card1 card1 card1 card1'
+            'image-1 image-1 image-1 image-1 image-1 image-1'
+            'card2 card2 card2 card2 card2 card2'
+            ' references references references references references references'
+            'footer footer footer footer footer footer';
+
+        gap: 20px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'header header header header header header'
+            'introduction introduction introduction introduction introduction introduction'
+            'pros pros pros pros pros pros'
+            'cons cons cons cons cons cons'
+            ' references references references references references references'
+            'footer footer footer footer footer footer';
+        padding: .5em;
+        gap: 20px;
+    }
+
+    .grid-container-about {
+        display: grid;
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'header header header header header header'
+            'profile1 profile1 profile1 profile1 profile1 profile1'
+            'card1 card1 card1 card1 card1 card1'
+            'profile2 profile2 profile2 profile2 profile2 profile2'
+            'card2 card2 card2 card2 card2 card2'
+            'profile3 profile3 profile3 profile3 profile3 profile3'
+            'card3 card3 card3 card3 card3 card3'
+            'profile4 profile4 profile4 profile4 profile4 profile4'
+            'card4 card4 card4 card4 card4 card4'
+            'profile5 profile5 profile5 profile5 profile5 profile5'
+            'card5 card5 card5 card5 card5 card5'
+            'profile6 profile6 profile6 profile6 profile6 profile6'
+            'card6 card6 card6 card6 card6 card6'
+            'footer footer footer footer footer footer' !important;
+        gap: 20px;
+        padding: 0.5em;
+        justify-content: center;
+    }
+
+    .card-1 p,
+    .card-1 h1,
+    .card-2 p,
+    .card-2 h1,
+    .card-3 p,
+    .card-3 h1,
+    .card-4 p,
+    .card-4 h1,
+    .card-5 p,
+    .card-5 h1,
+    .card-6 h1,
+    .card-6 p {
+        text-align: left !important;
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    .image-1,
+    .image-2,
+    .image-3,
+    .image-4,
+    .image-5,
+    .image-6 {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/*SECOND BREAK POINT - Mobile */
+@media only screen and (max-width : 600px) {
+
+    .pros li,
+    .cons li {
+        text-align: left;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'header header header header header header'
+            'introduction introduction introduction introduction introduction introduction'
+            'pros pros pros pros pros pros'
+            'cons cons cons cons cons cons'
+            ' references references references references references references'
+            'footer footer footer footer footer footer';
+
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    .introduction-img {
+        max-width: 90%;
+    }
+
+    .card-1 h1,
+    .card-2 h1,
+    .card-3 h1,
+    .card-4 h1,
+    .card-5 h1,
+    .card-6 h1 {
+        font-size: 24px;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4,
+    .card-5,
+    .card-6 {
+        margin: 0;
+    }
+
+    .profile {
+        max-width: 90%;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+
+}
+
+@media only screen and (max-width:400px) {
+    #referenceList p {
+        width: 80vw;
+    }
+}

@@ -1,0 +1,99 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+/* WPH is adding the following style to make the images consistent in width and to bring up the text next to them */
+img {max-width: 200px; float: left; padding-right: 1em;}
+
+header {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+footer {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; 
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.faq-header {
+    cursor: pointer;
+    color: #0077cc;
+}
+
+.faq-header:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .card {
+        flex: 1 1 100%; 
+    }
+}
+
+
+/* WPH is adding the following style to stop the float of the images */
+@media (max-width: 600px) {
+    img {float: none; display: block; width: 95%; margin: 0 auto;}
+}
