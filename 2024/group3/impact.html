@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Group 3 Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="author" content="Group 3">
+	<meta name="description" content="How online/international games affect gamers and their interactions with society">
+	<meta name="keywords" content="online gaming, social interations, global gaming, gaming impacts, technological developments, gamer interviews">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <h2>The Social Impact of Online Gaming</h2>
+          
+           <div id="hamburger-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="regular-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="global.html">Global Gaming</a></li>
+                <li><a href="impact.html" class="active">Impact</a></li>
+                <li><a href="techdevelopments.html">Technological Developments</a></li>
+                <li><a href="thoughts.html">Gamer Thoughts</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="global.html">Global Gaming</a></li>
+                    <li><a href="impact.html">Impact</a></li>
+                    <li><a href="techdevelopments.html">Technological Developments</a></li>
+                    <li><a href="thoughts.html">Gamer Thoughts</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+
+            <img src="images/family-gaming.jpg" class="contentimg" alt="father and son gaming">
+
+            <h2>Postive Impacts</h2>
+            <p>Online gaming has numerous positive effects on adolescents, such as improving cognitive abilities, social skills, and emotional well-being. It enhances decision-making, problem-solving, and attentional skills, while also promoting social interaction and physical movement. Additionally, online gaming can boost motivation, emotional regulation, and overall psychological well-being, contributing to academic and professional success.Overall, online gaming is a valuable tool for enhancing the mental health and well-being of adolescents.</p>
+		<ul style="list-style-type:disc">
+			<li>1. Enhanced Mental Health and Well-being: Studies highlight that video games can promote mental well-being by fostering a sense of achievement and providing emotional benefits such as happiness from gameplay achievements. Games that are well-designed to support positive functioning can contribute significantly to the mental health of players, by offering both relaxation and a sense of accomplishment.</li>
+			<li>2. Cognitive Benefits: Research has demonstrated that playing video games can improve various cognitive functions, including attention, problem-solving skills, and memory. This is particularly evident in games that require strategic thinking and complex decision-making.</li>
+			<li>3. Social Connections: Online gaming provides a platform for social interaction, allowing players to connect with others across the globe. This can be especially beneficial for individuals in isolated conditions, as gaming offers a way to foster social connections and reduce feelings of loneliness.</li>
+		</ul>
+
+        
+
+
+            <h2>Negative Impacts</h2>
+            <p>Discussing the negative impacts of online gaming, the article highlights concerns about physical and mental health, as well as risks associated with excessive play. This includes the potential for a sedentary lifestyle leading to weight gain and chronic diseases, as well as mental health issues like addiction, social isolation, and depression. The debate over the connection between violent games and aggressive behavior continues, while risks such as cyberbullying and fraud are also mentioned. Mitigating these impacts involves promoting responsible gaming, setting limits, and balancing gaming with other activities. Parents, caregivers, game developers, and platforms all play a role in fostering a healthier gaming environment.</p>
+		<ul style="list-style-type:disc">
+			<li>1. Potential for Addiction: There is a significant concern about the addictive potential of video games. The structure of many games encourages long play sessions that can lead to problematic gaming behaviors. Such behaviors are associated with negative outcomes like reduced academic performance and social isolation.</li>
+			<li>2. Impact on Academic Performance: Excessive gaming can negatively affect academic performance. A study focusing on Filipino students found that those who spent more time gaming during weekdays reported lower academic achievements. </li>
+			<li>3. Psychological Risks: While some players may experience benefits in terms of reduced stress and improved mood, others may suffer from increased psychological distress. This can include symptoms of anxiety and depression, particularly in players who use gaming as a way to escape real-world problems.</li>
+		</ul>
+        </main>
+
+        <!-- <aside>
+		<p>placeholder</p>
+        </aside> -->
+
+        <footer>
+            <p>Copyright © 2024, IUI-Haaga-Helia</p>
+            <!-- <a target="_blank" href="https://icons8.com/icon/BE56i0LQZMIW/home">Home</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+        </footer>
+    </div>
+
+    <script>
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgericon = document.getElementById('hamburger-icon');
+            const mobilemenu = document.querySelector('.mobile-menu');
+    
+            hamburgericon.addEventListener('click', function() {
+                this.classList.toggle('open');
+                mobilemenu.classList.toggle('is-visible');
+            });
+        });
+    
+    </script>
+    
+    <script src="/scripts/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Serif', serif;
+    background-color: #d3d3d3; /* Light gray background for the page */
+    margin: 0; /* Reset default margin */
+    padding-top: 60px; /* Account for the fixed navbar */
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: lightgray;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo{
+    padding: 5px;
+    height: 50px;
+    font-family: "Roboto Serif", serif;
+    text-align: left;
+    width: 70px; /* Adjust according to the size of the logo image */
+    height: 60px; /* Makes it a square */
+    display: inline-block; /* Makes the .logo container only as wide as necessary */
+    background-repeat: no-repeat; /* Ensures the background image doesn't repeat */
+    background-size: cover; /* Covers the entire area of the block */
+    background-position: center; /* Center the background image */
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto Serif", serif;
+}
+
+.navbar{
+    position: fixed; /* Keeps the navbar at the top */
+    width: 100%;
+    z-index: 10; /* Higher index to keep it above other elements */
+    background: #d3d3d3; /* Gray background for the navbar */
+            
+}
+
+.nav-menu{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* Add padding to account for fixed navbar height */
+            /* Add your other nav-menu styles here */
+}
+
+.nav-branding{
+    font-size: 2rem;
+}
+
+.nav-item{
+    padding: 10px;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-item:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.nav-item-active{
+    padding: 10px;
+    border: 2px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+.content{
+    margin: auto;
+    width: 70%;
+    /* height: 100vh; WHY DO THIS? */
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 100px; /* Add top padding to ensure content doesn't hide behind     navbar */
+    text-align: left;
+    padding-bottom: 20px; /* Padding at the bottom for spacing */
+}
+
+footer{
+    width: 100%;
+    background-color: lightgray;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info-box {
+            background-color: #e6e6e6; /* gray background for the content boxes */
+            border: 1px solid #cccccc; /* Gray border for the boxes */
+            border-radius: 8px; /* Rounded corners for the boxes */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Shadow for 3D effect */
+            padding: 20px; /* Padding inside the box */
+            margin-bottom: 10px; /* Space between boxes */
+	    overflow: auto; /* Adds a scrollbar if the content overflows */
+            min-height: 150px; /* Minimum height to accommodate more text */
+            display: flex; /* Using flex to align content */
+            flex-direction: column; /* Stack content vertically */
+            justify-content: center; /* Center content vertically in case of smaller amounts of text */
+        }
+.opinion-box {
+            background-color: #f2f2f2; /* Light gray background for boxes */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Padding inside the box */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            overflow: auto; /* Adds a scrollbar if the content overflows */
+            min-height: 150px; /* Minimum height to accommodate more text */
+            display: flex; /* Using flex to align content */
+            flex-direction: column; /* Stack content vertically */
+            justify-content: center; /* Center content vertically in case of smaller amounts of text */
+        }
+.grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            padding-top: 100px; /* Added padding at the top to push down from nav */
+            background-color: #e0e0e0; /* Darker gray background for the grid */
+            margin: 0 auto; /* Centers the grid */
+            max-width: 1200px; /* Maximum width of the grid */
+        }
+.index .content {
+    background-color: #ABEBC6; /* Light Green */
+}
+.basics .content {
+    background-color: #FFDAB9; /* Light Orange (Peach Puff) */
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.pros .content {
+    background-color: #AED6F1; /* Light Cyan (Light Cyan) */
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.cons .content {
+    background-color: #FADBD8; /* Light Pink*/
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.index .logo {
+    background-color: #ABEBC6; /* Light Green */
+}
+
+.basics .logo {
+    background-color: #FFDAB9; /* Light Orange (Peach Puff) */
+}
+
+.pros .logo {
+    background-color: #AED6F1; /* Light Cyan (Light Cyan) */
+}
+
+.cons .logo {
+    background-color: #FADBD8; /* Light Pink */
+}
+
+.general .content {
+    background-color: #d3d3d3; /* Light gray */
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.general .logo {
+    background-color: #d3d3d3; /* Light gray */
+}
+
+.references .content {
+    background-color: #737f8e;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.references .logo
+{
+    background-color: #737f8e;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff; /* White background for the card */
+    overflow: hidden;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    perspective: 1000px;
+}
+
+.card-content, .card-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content {
+    background: #ffffff; /* White background for the flipped content */
+    color: black; /* Black text for flipped content */
+    transform: rotateY(180deg); /* Positioned at the back initially */
+    transition: transform 0.6s;
+}
+
+.card-front {
+    background-color: #ffffff; /* White background for the front of the card */
+    color: black; /* Black text */
+    transform: rotateY(0); /* Shows front face of the card first */
+}
+
+.card:hover .card-content {
+    transform: rotateY(0); /* Rotate to show detailed content when hovered on by the user */
+}
+
+.card:hover .card-front {
+    transform: rotateY(-180deg); /* Rotate to hide front content when hovered on by the user */
+}
+
+.card-content a {
+    color: blue; /* Sets the link color to blue */
+    text-decoration: underline; /* Underlines the link */
+}
+
+.card-content a:hover {
+    color: darkblue; /* Changes the link color on hover for better interactivity */
+    text-decoration: none; /* Removes the underline on hover for a change effect */
+}
+
+@media(max-width:768px) {
+
+    .logo{
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .navbar{
+        position: absolute;
+        width: 100%;
+        min-height: 70px;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        z-index: 10;
+        background-color: lightgrey;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }    
+
+    .logo{
+        padding-left: 20px;
+    }
+
+    .nav-menu{
+        position: fixed;
+        z-index: 1;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        background-color: lightgrey;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .nav-item{
+        padding: 10px;
+        border: none;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .nav-link{
+        transition: 0.7s ease;
+    }
+    
+    .nav-link:hover{
+        color: white;
+    }
+
+    .content{
+        width: 100%;
+    }
+}

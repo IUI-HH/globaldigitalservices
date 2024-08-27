@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Group 3 Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="author" content="Group 3">
+	<meta name="description" content="How online/international games affect gamers and their interactions with society">
+	<meta name="keywords" content="online gaming, social interations, global gaming, gaming impacts, technological developments, gamer interviews">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <h2>The Social Impact of Online Gaming</h2>
+          
+           <div id="hamburger-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="regular-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="global.html">Global Gaming</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="techdevelopments.html">Technological Developments</a></li>
+                <li><a href="thoughts.html">Gamer Thoughts</a></li>
+                <li><a href="aboutus.html" class="active">About Us</a></li>
+            </ul>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="global.html">Global Gaming</a></li>
+                    <li><a href="impact.html">Impact</a></li>
+                    <li><a href="techdevelopments.html">Technological Developments</a></li>
+                    <li><a href="thoughts.html">Gamer Thoughts</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <h2>Meet Group 3!</h2>
+
+            <hr>
+
+            <h2>Alexandra Bradley</h2>
+            <img src="images/AB.png" alt="Alexandra Bradley" class="center">
+            <p>
+                Alexandra is a graduate student at Indiana University, in the Master of Library and Information Science. Right now, she is also preparing to enter Purdue University for a Master in Cybersecurity, to work at a Google international private security company. She dreams of opening a winery and experiencing food and drinks from all over the world.
+            </p>
+            <p>
+                Her interests in games include adventure, RPG, and puzzles. She loves fantasy and mythology and tends to focus on those in any game she plays. She graduated with a B.A. in English Literature, focused on ancient and medieval literatures.
+            </p>
+
+            <h2>Edward Zheng</h2>
+            <img src="images/EZ.png" alt="Edward Zheng" class="center">
+            <p>
+                Edward is a senior at IU pursuing an informatics degree with a cognate in human centered computing. He aims to better understand user interactions with technology and develop systems that are both efficient and user-friendly. As a gamer himself, this topic is something Edward is very interested in. Recently, he has finished Baldur's Gate 3 and is about to start a new playthrough of Fallout: New Vegas.
+            </p>
+
+            <h2>Parker Stewart</h2>
+            <img src="images/PS.png" alt="Parker Stewart" class="center">
+            <p> Parker is a junior at Purdue indianapiolis studying computer science. His goal is learn ways to combine his IT corporate knowledge with his programming knowledge. In addition to this he is looking for ways to utilize blockchain technologies in pratical ways and looks foward to blockchain implementation. Parker is an avid gamer and enjoys games where he can talk smack to teammates and contribute to a community. Some of his favorite games are Rust, Valorant, League of Legends and FFXIV online.</p>
+
+            <h2>Alyssa Espique</h2>
+            <img src="images/AE.png" alt="Alyssa Espique" class="center">
+            <p>Alyssa is a Junior at IUPUI pursuing a degree in computer science, with a minor in business. Right now, she aims to expand her knowledge on the different careers a computer science degree offers. As a casual gamer, she has some experience with this topic and is very fascinated by how online gaming affects other people and society. </p>
+
+	    <h2> Eetu Toiviainen</h2>
+		<p>Eetu is a first-year student in Haaga-Helia, studying Business Information Technology. He is especially interested in anything related to 3D development. He has also been a gamer as long as he can remember, some of his current favorites being Baldur's Gate 3, Helldivers 2 and FFXIV.</p>
+           <h2> Iryna Naumova</h2>
+		<img src="images/IN.png" alt"Iryna Naumova" class ="center">
+		<p>Iyna is passionate about UX UI design. She received her Master's degree in Law in 2022, but decided to completely change her field of work. Now she dreams of creating the most user-friendly interfaces and working in a strong team.  
+
+Iryna is not a big fan of games, but is very excited about The Witcher 3. </p>
+		<!-- <div class="card">
+		
+                <div class="card-img">
+                    <img src="images/PS.png" alt="Parker Stewart">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Parker Stewart</h2>
+                    <p class="card-role">Role</p>
+                    <p class="card-email">Email</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div> -->
+	
+    </main>
+
+        <!-- <aside>
+		<p>placeholder</p>
+        </aside> -->
+
+        <footer>
+            <p>Copyright © 2024, IUI-Haaga-Helia</p>
+            <!-- <a target="_blank" href="https://icons8.com/icon/BE56i0LQZMIW/home">Home</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+        </footer>
+    </div>
+
+    <script>
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgericon = document.getElementById('hamburger-icon');
+            const mobilemenu = document.querySelector('.mobile-menu');
+    
+            hamburgericon.addEventListener('click', function() {
+                this.classList.toggle('open');
+                mobilemenu.classList.toggle('is-visible');
+            });
+        });
+    
+    </script>
+    
+    <script src="/scripts/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Group 3 Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="author" content="Group 3">
+	<meta name="description" content="How online/international games affect gamers and their interactions with society">
+	<meta name="keywords" content="online gaming, social interations, global gaming, gaming impacts, technological developments, gamer interviews">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <h2>The Social Impact of Online Gaming</h2>
+          
+           <div id="hamburger-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="regular-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="global.html">Global Gaming</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="techdevelopments.html">Technological Developments</a></li>
+                <li><a href="thoughts.html" class="active">Gamer Thoughts</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="global.html">Global Gaming</a></li>
+                    <li><a href="impact.html">Impact</a></li>
+                    <li><a href="techdevelopments.html">Technological Developments</a></li>
+                    <li><a href="thoughts.html">Gamer Thoughts</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <h2>Explanation of Survey</h2>
+            <center> <p>A survey was done on a small scale, to receive a general idea of how gamers feel about gaming as an international collaboration. Do they learn from it? Do they encourage it? The age range responded was between 20-30 years old. They started gaming while young (some children, some teenagers). The responders also play often. When they answered the survey, most have last played online/internationally the day before. Those who play with other players have little to say negatively about people they have met. They consider those they met through games as friends or acquaintances. They believe that children should start approaching online gaming when they are more aware of themselves as individuals and starting social interactions. There have been positive experiences (learning, making friends, having fun) and negative experiences (bullied, isolated, frustration with people met or the game itself). However, even with negative experiences, most of the responders will consider games to have made a positive impact on their lives overall, whether personality, security, or learning. Finally, they have learned a lot about other cultures and countries through gaming, and have also learned to be cautious, understanding hate or dislike and how influential it can be, as well as love and interest.</p> </center>
+		
+
+            <h2>Pie Charts, Graphs, Etc.</h2>
+            <div>
+		<center> <p>Below is the data we recieved from our survey.</p> </center>  
+		<img src="images/GameGenres.png" alt="Game Genres Bar Graph" class="center" style="width: 50%;">
+		<div>
+		<img src="images/PieChart.png" alt="Game Style Pie Chart" class="center" style="width: 50%;">  
+		<div>
+	    </div>
+
+        </main>
+
+        <!-- <aside>
+		<p>placeholder</p>
+        </aside> -->
+
+        <footer>
+            <p>Copyright © 2024, IUI-Haaga-Helia</p>
+            <!-- <a target="_blank" href="https://icons8.com/icon/BE56i0LQZMIW/home">Home</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+        </footer>
+    </div>
+
+    <script>
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgericon = document.getElementById('hamburger-icon');
+            const mobilemenu = document.querySelector('.mobile-menu');
+    
+            hamburgericon.addEventListener('click', function() {
+                this.classList.toggle('open');
+                mobilemenu.classList.toggle('is-visible');
+            });
+        });
+    
+    </script>
+    
+    <script src="/scripts/script.js"></script>
+
+</body>
+
+</html>
