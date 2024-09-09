@@ -1,7 +1,6 @@
 /* HH Blue - #0079c2 */
 /* HH Green - #99c878 */ 
-/* IUPUI Red - #990002 */
-/* Light gray? - #f5f5f5 */
+/* IUI Red - #990002 */
 
 
 body {
@@ -14,6 +13,25 @@ body {
 img	{
 	max-width: 100%;
 	}
+	
+section a:link, a:visited 
+{border-radius: 25px;
+  background-color: #990002;
+  color: #fff;
+  padding: 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+section a:hover, a:active {
+  background-color: #0079c2;
+  color: white;
+}
+	
+	
+	
+	
 
 header {
     grid-area: header;
@@ -28,10 +46,6 @@ header {
     background-color: #fff;
     display: flex;
     align-items: center;
-}
-
-nav .icon {
-    display: none;
 }
 
 table, td, th {
