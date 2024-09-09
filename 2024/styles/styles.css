@@ -14,7 +14,7 @@ img	{
 	max-width: 100%;
 	}
 	
-section a:link, a:visited 
+section.group a:link, a:visited 
 {border-radius: 25px;
   background-color: #990002;
   color: #fff;
@@ -24,13 +24,15 @@ section a:link, a:visited
   display: inline-block;
 }
 
-section a:hover, a:active {
+section.group a:hover, a:active {
   background-color: #0079c2;
   color: white;
 }
 	
 	
-h3 {font-size: 1.1em;}
+h3 {
+	font-size: 1.1em;
+}
 	
 
 header {
