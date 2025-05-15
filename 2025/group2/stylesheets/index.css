@@ -1,0 +1,723 @@
+body {
+    position: relative;
+    background-color: #6D0B52;
+    max-width: 80em;
+    margin: auto;
+    padding: 0.5rem 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav nav"
+        "header header header header"
+        "main main main main"
+        "aside1 aside1 aside2 aside2"
+        "aside3 aside3 aside3 aside3"
+        "footer footer footer footer";
+    row-gap: 2rem;
+    column-gap: 2rem;
+    background-color: #59959E;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.grid-container-collab {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav nav"
+        "header header header header"
+        "main main main main"
+        "aside1 aside1 aside1 aside2"
+        "aside3 aside3 aside3 aside3"
+        "footer footer footer footer";
+    row-gap: 2rem;
+    column-gap: 2rem;
+    background-color: #59959E;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.grid-container-fair-use {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav nav"
+        "header header header header"
+        "main main main main"
+        "aside4 aside4 aside2 aside2"
+        "images images images images"
+		"aside3 aside3 aside3 aside3"
+        "footer footer footer footer";
+    row-gap: 2rem;
+    column-gap: 2rem;
+    background-color: #59959E;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #003667;
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0.3rem 1.6rem;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    z-index: 999;
+    background-color: #003667;
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.3rem 1.6rem;
+}
+
+
+.menu-button {
+    display: none;
+}
+
+ul {
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.bullet {
+
+    display: block;
+}
+
+ul li {
+    padding: 1.8rem 0.4rem;
+
+    list-style-type: none;
+}
+
+ul.bullet li {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding: 0.4rem 1rem;
+}
+
+ul li a {
+    color: #FFF6F3;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-decoration: none;
+    font-family: Roboto, Inter, sans-serif;
+}
+
+a:hover {
+    color: #EF8C63;
+}
+
+.references ul li a {
+	color: #003667;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: Roboto, Inter, sans-serif;
+}
+
+header {
+    grid-area: header;
+    background-color: #003667;
+    padding: 2rem;
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Roboto, Inter, sans-serif;
+    color: #FFF6F3;
+}
+
+main {
+    grid-area: main;
+    background-color: #FFF6F3;
+    border-radius: 15px;
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main.references {
+	padding-left: 1.5rem;
+}
+
+.aside1 {
+    grid-area: aside1;
+    background-color: #59959E;
+}
+
+.aside2 {
+    grid-area: aside2;
+    background-color: #F89C76;
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.aside3 {
+    grid-area: aside3;
+    background-color: #FFF6F3;
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.aside4 {
+    grid-area: aside4;
+    background-color: #FFF6F3;
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+    grid-area: info;
+    background-color: #59959E;
+	display: flex;
+	flex-direction: row;
+}
+
+.images {
+    grid-area: images;
+    background-color: #59959E;
+}
+
+.info1 {
+    background-color: #FFF6F3;
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+	width: 50%;
+	margin: 0;
+}
+
+.info2 {
+    background-color: #F89C76;
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width: 50%;
+	margin: 0;
+
+}
+
+
+/* Formatting for asides that have bullet points */
+.bullet {
+    padding: 0.5rem 1rem;
+}
+
+/* formatting for div holding Selma's fair use image */
+.image-se {
+	float: left;
+	width: 50%;
+}
+
+
+
+
+footer {
+    grid-area: footer;
+    background-color: #003667;
+    border-radius: 10px;
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer p {
+    color: #FFF6F3;
+    text-align: center;
+}
+
+p {
+    padding: 0.5rem 1rem;
+    font-family: Roboto, Inter, sans-serif;
+  	line-height: 1.3;
+}
+
+.quotes p {
+	padding: 0.5rem 5rem;
+}
+
+.quotes h4 {
+	padding: 0.5rem 2.5rem;
+}
+
+/*figcaption {
+    color: #000000;
+    text-align: left;
+    font-family: Roboto, Inter, sans-serif;
+	padding: 0.5rem;
+}  Not sure we have any figcaptions left -- paragraphs were cooperating better*/
+
+.bullet li {
+    font-family: Roboto, Inter, sans-serif;
+}
+
+h2 {
+    padding: 0.5rem 1rem;
+    font-family: Roboto, Inter, sans-serif;
+}
+
+h3 {
+    padding: 0.5rem 1rem;
+    font-family: Roboto, Inter, sans-serif;
+}
+
+h4 {
+    padding: 0.5rem 1rem;
+    font-family: Roboto, Inter, sans-serif;
+}
+
+.float-right {
+	float: right;
+	max-width: 400px;
+}
+
+/* Divs for captioned images that float right */
+.float-r {
+	float: right;
+	max-width: 45%;
+	border: 2px solid #003667;
+    border-radius: 0.6rem;
+	margin: 0.5rem  1rem 0.5rem 0.5rem;	
+}
+
+/* Divs for captioned images that float left */
+.float-l {
+	float: left;
+	max-width: 45%;
+	border: 2px solid #003667;
+    border-radius: 0.6rem;
+	margin: 0.5rem  0.5rem 0.5rem 1rem;	
+}
+
+main img {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+img.float-right {
+    float: right;
+}
+
+img.float-left {
+    float: left;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 400px;
+}
+
+img.monkey {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 275px;
+}
+
+img.fair-use {
+    padding: 1rem;
+}
+
+.right img {
+    max-width: 250px;
+    float: right;
+    padding: 0;
+    margin: 0.8rem 1rem;
+    border: 2px solid #190902;
+}
+
+.left img {
+    max-width: 250px;
+    float: left;
+    padding: 0;
+    margin: 0.8rem 1rem;
+    border: 2px solid #190902;
+}
+
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+	padding: 1rem;
+}
+
+/* clear left divs */
+.left {
+    overflow: auto;
+}
+
+/* clear right divs */
+.right {
+    overflow: auto;
+}
+
+
+/* Figure 1 and Figure 6*/
+.fig1 {
+	padding: 0;
+}
+
+/* Figure 3 */
+.fig3 {
+	max-width: 500px;
+	padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+/*NAV AND FAIR USE PAGE BREAK POINT */
+@media only screen and (max-width : 1000px) {
+	
+	.hideOnMobile {
+	display: none;
+	}
+
+	.menu-button{
+	display: block;
+	text-align: right;
+	}
+	
+	ul {
+	width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+	
+	.image-se {
+	float: none;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
+
+	.image-sf {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/*FIRST BREAK POINT === tablet */
+@media only screen and (max-width : 900px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "nav nav nav nav"
+            "header header header header"
+            "main main main main"
+            "aside1 aside1 aside1 aside1"
+            "aside2 aside2 aside2 aside2"
+            "aside3 aside3 aside3 aside3"
+            "footer footer footer footer";
+        row-gap: 2rem;
+        column-gap: 2rem;
+        background-color: #59959E;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+	
+	.grid-container-collab {
+        display: grid;
+        grid-template-areas:
+            "nav nav nav nav"
+            "header header header header"
+            "main main main main"
+            "aside1 aside1 aside1 aside1"
+            "aside2 aside2 aside2 aside2"
+            "aside3 aside3 aside3 aside3"
+            "footer footer footer footer";
+        row-gap: 2rem;
+        column-gap: 2rem;
+        background-color: #59959E;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+	
+	.grid-container-fair-use {
+        display: grid;
+        grid-template-areas:
+            "nav nav nav nav"
+			"header header header header"
+			"main main main main"
+			"aside4 aside4 aside4 aside4"
+			"aside2 aside2 aside2 aside2"
+			"images images images images"
+			"aside3 aside3 aside3 aside3"
+			"footer footer footer footer";
+        row-gap: 2rem;
+        column-gap: 2rem;
+        background-color: #59959E;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+	
+	.float-right {
+	float: none;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
+
+    img.float-right {
+        width: 50%;
+        min-width: 250px;
+    }
+
+    img.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    img.monkey {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        max-width: 275px;
+    }
+
+    img.fair-use {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        max-width: 400px;
+        min-width: 150px;
+    }
+
+    .right img {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .left img {
+        width: 90%;
+        max-width: 250px;
+    }
+	
+	/* Clear float for captioned div */
+.float-r {
+    float: none;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	max-width: 90%;
+}
+
+/* Clear float for captioned div */
+.float-l {
+    float: none;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	max-width: 90%;	
+}
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+        text-align: right;
+    }
+}
+
+/*SECOND BREAK POINT === mobile */
+@media only screen and (max-width : 600px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "nav nav nav nav"
+            "header header header header"
+            "main main main main"
+            "aside1 aside1 aside1 aside1"
+            "aside2 aside2 aside2 aside2"
+            "aside3 aside3 aside3 aside3"
+            "footer footer footer footer";
+        row-gap: 2rem;
+        column-gap: 2rem;
+        background-color: #59959E;
+        padding: 2rem;
+        border-radius: 1rem;
+    }	
+
+    .sidebar {
+        width: 100%;
+        padding: 0;
+    }
+	
+	.quotes p {
+	padding: 0.5rem 2.5rem;
+}
+
+	main.references {
+		padding: 0;
+	}
+	
+	.float-right {
+		padding: 0;
+	}
+
+    img.float-right {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        min-width: 125px;
+    }
+
+    img.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        min-width: 150px;
+    }
+
+
+    .right img {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 150px;
+    }
+
+    .left img {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+		width: 90%;
+        min-width: 150px;
+    }
+	
+	.image-se {
+		float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+		width: 90%;
+        min-width: 150px;
+		padding-bottom: 1.5rem;
+	}
+	
+	.image-sf {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+		width: 90%;
+        min-width: 150px;
+	}
+	
+	.banner {
+		padding: 1rem 0;
+	}
+
+
+    footer {
+        padding: 0;
+    }
+
+}
+
+/*COLLABORATION PAGE BREAK POINT === shrink header size */
+@media only screen and (max-width : 400px) {
+	h1.collab {
+		font-size: 1.3rem;
+	}
+}
+
+/*THIRD BREAK POINT === hide images on very small screens */
+@media only screen and (max-width : 300px) {
+	img {
+		display: none;
+	}
+	
+	img.float-right {
+        display: none;
+    }
+
+    img.center {
+		display: none;
+    }
+
+    img.monkey {
+        display: none;
+    }
+
+    img.fair-use {
+        display: none;
+    }
+
+    .right img {
+        display: none;
+    }
+
+    .left img {
+        display: none;
+    }
+	
+	.banner {
+		display: none;
+	}
+	
+/* figure frames */
+	.float-r {
+		display: none;
+	}
+	
+/* figure frames */
+	.float-l {
+		display: none;
+	}	
+
+/* figure sections */	
+	figure {
+		display: none;
+	}
+	
+	header h1 {
+		font-size: 1.15rem;
+		font-weight: 700;
+	}
+	
+	h2 {
+	font-size: 1.15rem;
+	font-weight: 700;
+	}
+}
