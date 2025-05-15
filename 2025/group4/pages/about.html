@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/x-icon" href="../images/group-4-favicon.png">
+  <meta name="author" content="Kayla Quadros, Luka Sauralehto, Kajsa Lindroos, Sophia Madar, Joni Könkkölä, Abby Embree, Joni Voong">
+  <meta name="description" content="A collaborative project between IUI and HH students, exploring AI's environmental impact">
+	<meta name="keywords" content="Indiana University Indianapolis, Haaga-Helia, LIS-S531, AI, Artificial Intelligence, Environment, Climate Change">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="../index.html" class="nav-logo">
+          <img src="../images/group-4-favicon.png" alt="Logo">
+        </a>
+        <a href="../index.html" class="nav-link">Home</a>
+      </div>
+      <button class="hamburger" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-right">
+        <li><a href="energy.html" class="nav-link">Energy</a></li>
+        <li><a href="pollution.html" class="nav-link">Pollution</a></li>
+        <li><a href="climate.html" class="nav-link">Climate</a></li>
+        <li><a href="conclusion.html" class="nav-link">Balance</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero-secondary">
+    <div class="hero-overlay">
+      <h1>About Us</h1>
+      <p>Learn more about our team and our mission</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro-section section-light">
+      <h2>Group Members</h2>
+      <div class="bio-grid">
+        <div class="bio-card">
+          <div class="image-placeholder"></div>
+          <h3>Kayla Quadros</h3>
+        </div>
+        <div class="bio-card">
+          <div class="image-placeholder"></div>
+          <h3>Luka Sauralehto</h3>
+        </div>
+        <div class="bio-card">
+          <div class="image-placeholder"></div>
+          <h3>Kajsa Lindroos</h3>
+        </div>
+        <div class="bio-card">
+          <div class="image-placeholder"></div>
+          <h3>Sophia Madar</h3>
+        </div>
+        <div class="bio-card">
+          <div class="image-placeholder"></div>
+          <h3>Joni Könkkölä</h3>
+        </div>
+        <div class="bio-card">
+          <div class="image-placeholder"></div>
+          <h3>Abby Embree</h3>
+        </div>
+        <div class="bio-card">
+          <div class="image-placeholder"></div>
+          <h3>Joni Voong</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-section">
+      <h2>Why We Chose This Topic</h2>
+      <p>We believe that artificial intelligence is one of the most powerful forces shaping our future – and that its environmental impact deserves just as much scrutiny as its technical potential. Our group was driven by a shared concern for climate resilience, ethical innovation, and the balance between progress and preservation.</p>
+    </section>
+
+    <section class="contributions-section">
+      <h2>Research & Contributions</h2>
+      <ul>
+        <li><strong>Sophia Madar:</strong> Lead Engineer — coding, layout, AI and Climate Change integration research, analysis and overall website implementation.</li>
+        <li><strong>Kayla Quadros:</strong> Lead Designer — responsible for landing page layout, HTML, CSS polish, and visual consistency.</li>
+        <li><strong>Luka Sauralehto:</strong> Co-developer of the Pollution & Environmental Justice page — contributed research, HTML/CSS, and structural design.</li>
+        <li><strong>Joni Voong:</strong> Co-developer of the Pollution & Environmental Justice page — worked on content, structure, and interactivity.</li>
+        <li><strong>Kajsa Lindroos:</strong> Content and HTML for final synthesis, balance discussion, and ethical framework perspectives.</li>
+        <li><strong>Joni Könkkölä:</strong> Synthesis/conclusion content development, including trade-off considerations and solution framing.</li>
+        <li><strong>Abby Embree:</strong> Content development on electricity/water use and corporate impact, including sourcing of primary reports.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 AI & Our Earth. IUI-HH Group 4. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Hamburger menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      var hamburger = document.querySelector('.hamburger');
+      var navbar = document.querySelector('.navbar');
+      if (hamburger && navbar) {
+        hamburger.addEventListener('click', function() {
+          navbar.classList.toggle('open');
+          var expanded = hamburger.getAttribute('aria-expanded') === 'true';
+          hamburger.setAttribute('aria-expanded', !expanded);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

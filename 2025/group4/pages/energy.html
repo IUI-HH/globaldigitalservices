@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Water and Power Bill</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../images/group-4-favicon.png">
+  <meta name="author" content="Kayla Quadros, Luka Sauralehto, Kajsa Lindroos, Sophia Madar, Joni Könkkölä, Abby Embree, Joni Voong">
+	<meta name="description" content="A collaborative project between IUI and HH students, exploring AI's environmental impact">
+	<meta name="keywords" content="Indiana University Indianapolis, Haaga-Helia, LIS-S531, AI, Artificial Intelligence, Environment, Climate Change">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="../index.html" class="nav-logo">
+          <img src="../images/group-4-favicon.png" alt="Logo">
+        </a>
+        <a href="../index.html" class="nav-link">Home</a>
+      </div>
+      <button class="hamburger" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-right">
+        <li><a href="energy.html" class="nav-link">Energy</a></li>
+        <li><a href="pollution.html" class="nav-link">Pollution</a></li>
+        <li><a href="climate.html" class="nav-link">Climate</a></li>
+        <li><a href="conclusion.html" class="nav-link">Balance</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero-secondary">
+    <div class="hero-overlay">
+      <h1>The Water and Power Bill</h1>
+      <p>The environmental cost of AI from training to deployment</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Overview Tiles -->
+    <section class="intro-section">
+      <h2>AI Lifecycle: From Training to Inference</h2>
+      <div class="intro-columns">
+        <div class="intro-item">
+          <div class="icon-placeholder"></div>
+          <h3>Training Phase</h3>
+          <p>Training large models like GPT-4 requires immense compute power, often over weeks or months.</p>
+        </div>
+        <div class="intro-item">
+          <div class="icon-placeholder"></div>
+          <h3>Inference Phase</h3>
+          <p>Inference — or using the model after training — still consumes energy, especially at scale.</p>
+        </div>
+        <div class="intro-item">
+          <div class="icon-placeholder"></div>
+          <h3>Server Farms</h3>
+          <p>GPUs running 24/7 in data centers create high energy demand and heat output, requiring constant cooling.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Energy and Water Section -->
+    <section class="power-section">
+      <h2>The Power Struggle</h2>
+      <div class="power-content">
+        <div class="power-image"><img src="../images/power_image.jpg" alt="Power" style="display:block; max-width:100%; height:auto;"></div>
+          <div class="text-block">
+            <p>Electricity consumption comes in two different forms in AI data centers. The first is how much energy it takes to power the infrastructure of the center itself and the second is how much it takes to run the IT that handles the AI models. Because of how much energy it takes to run these data centers, there is something called an ideal PUE that they aim for to ensure that the centers are as environmentally friendly as possible. Specifically, data centers aim to have a PUE of 1.0 or lower and this PUE is measured by dividing the total data center energy consumption by the IT equipment energy consumption. While 1.0 is the goal that these data centers aim to achieve, most centers have a PUE of 1.6. On a data center with the average PUE of 1.6, the "IT equipment electricity consumption accounts for nearly 2/3, and the cooling system electricity consumption accounts for about ¼" of the electricity consumption (Jia, 2024).  </p>
+            <p>When it comes to exactly how much electricity it takes to run AI systems, there are multiple different factors that need to be examined. The first is what stage the AI is in. This is because training an AI system takes far more power than AI does after deployment. For models like ChatGPT 3, it takes just under 1,300 megawatt hours of energy to train the models which is about as much energy consumed by 130 homes in the US a year. For ChatGPT 4, it is almost 50 times as much to train this newer model (AI and Energy, 2024).  This means that to train ChatGPT 4, it can consume the amount of energy that 6,500 homes in the US consume in a single year. </p>
+            <p>When the AI model is no longer in training, it uses significantly less energy. However, it being in deployment means that there are other new factors that influence the energy consumption. These factors are visitor and request volume, answer length, program complexity, and model size. A less complex model could still consume the same amount of energy that a more complex model does if the simpler model has greater traffic or is, in general, a larger program. While the consumption of energy during the deployment phase is much smaller than the consumption during the training phase, it is still a large amount of energy as even after training is over, the PUE of the data centers still sit around 1.6.</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="intro-section">
+      <h2>Key Environmental Metrics</h2>
+      <div class="intro-columns">
+        <div class="intro-item">
+          <div class="icon-placeholder"></div>
+          <h3>Power Usage Effectiveness (PUE)</h3>
+          <p>A metric used to determine how efficiently a data center uses energy. Lower is better.</p>
+        </div>
+        <div class="intro-item">
+          <div class="icon-placeholder"></div>
+          <h3>Carbon Emissions</h3>
+          <p>Training GPT-3 produced as much CO₂ as driving a car for hundreds of thousands of miles.</p>
+        </div>
+        <div class="intro-item">
+          <div class="icon-placeholder"></div>
+          <h3>Water Footprint</h3>
+          <p>Cooling systems can consume millions of liters of water per year — invisible, but impactful.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="water-section">
+      <h2>The Water AI Drinks</h2>
+      <div class="water-content">
+        <div class="water-image"><img src="../images/water_image.jpg" alt="Water" style="display:block; max-width:100%; height:auto;"></div>
+        <div class="text-block">
+          <p>The water consumption of AI tools is also an area of concern as even the smallest request made via AI sources like ChatGPT or Copilot can consume absurd amounts of water. This water consumption is not just limited to the cooling of the data centers and servers that AI models operate from but also from supply chain demands and hydro-electric withdrawals to help run those very data centers.  </p>
+          <p>The amount of water for cooling data centers can fluctuate, directly mirroring the fluctuations of energy consumption and, just like the energy consumption, training AI models consumes a significant amount of water Training AI models like ChatGPT 3 can "consume a total of 5.4 million liters of water, including 700,000 liters of...on-site [server] water consumption" (Li et al., 2023). With the greater energy demand that ChatGPT 4 requires during the training stage, it is safe to assume that its water consumption is even greater than ChatGPT 3's. This means that ChatGPT 4 can, potentially, consume several hundred million liters of water during its training period. </p>
+          <p>This water that is consumed during the cooling stage is also a strain on the environment because the only water that can be used for cooling is potable (drinking) water. This is done to ensure no bacteria grows nor any blockages are created. During the cooling process, the water is evaporated to cool the system and can be reused. However, reuse only can be done between 3 to 10 times, meaning that the water is permanently removed from its source (Li et al., 2023, p. 3). This means that a large amount of the Earth's already limited drinking water is being used then made unusable to ensure that these AI models can run. </p>
+          <div class="cooling-image"><img src="../images/cooling_diagram.png" alt="Cooling Diagram" style="display:block; max-width:100%; height:auto;"></div>
+          <p>The amount of water used for evaporation depends on the location of the data centers and the outside weather conditions. This is because, while the outside air can be used to help cool the servers, if the weather conditions are optimal. If it is too hot or dry outside, then the outside air cannot be used and thus, more water has to be consumed to evaporate and cool the servers. When examining how much water is used, "data centers can evaporate approximately 1 – 9 liters per [kilowatt hour] of server energy: 1 L/kWh for Google's annualized global on-site water efficiency and 9 L/kWh for a large commercial data center during the summer in Arizona" (Li et al. 2023), meaning that when the conditions are at their worst, almost 10 times the amount of water is consumed to help keep the servers cool. </p>
+          <p>The other two areas of water consumption, the supply chain and hydro-electric withdrawals also create strains on the Earth's water supply, with the supply chain acting as 99% of Google's water footprint. For the supply chain, the stress comes from the type of water needed to fabricate new AI wafers and keep semiconductor plants cool. Specifically, the type of water needed is, like the cooling of the data servers, is potable water. Except this potable water has to be ultra pure and, when discharged, can contain toxic chemicals and hazardous waste.  (Lie et al., 2023, p. 4). Hydro-electrics, unlike the other two water consumption areas of AI, does return more water back to the withdrawal source however, AI still consumes more water in hydro-electrics than the national average. To generate electricity, "the U.S. national average water withdrawal and consumption are estimated at about 43.8 [liters per kilowatt hour] and 3.1 L/kWh, respectively. Meta's self-reported [hydro-electric] water consumption for its global data center fleet was 3.7 L/kWh (i.e., 55,475 megaliters divided by 14,975,435 MWh) in 2023" (Lie et al., 2023, p. 4). This means that while the hydro electrics were more water friendly than its companions in AI, it still consumed far more than most other companies and households in the US.</p>
+        </div>
+        <div class="water-infographic-image"><img src="../images/water-infographic.png" alt="Water Consumption Infographic" style="display:block; max-width:100%; height:auto;"></div>
+      </div>
+    </section>
+  </main>
+
+  <section class="citation-section">
+    <h2>Citations</h2>
+    <p><strong>Note:</strong> All citations below follow APA 7 formatting.</p>
+    <ul>
+      <li>AI and Energy. (2024). The environmental impact of artificial intelligence: Energy consumption in AI systems. <em>Environmental Science & Technology</em>.</li>
+      <li>Jia, B. (2024). Data center energy consumption and efficiency metrics. <em>Journal of Sustainable Computing</em>.</li>
+      <li>Li, C., Patterson, D., & Zou, J. (2023). Large language models can be pretty thirsty: A first-of-its-kind study on the water footprint of ChatGPT and other AI models. <em>Nature Machine Intelligence</em>.</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 AI & Our Earth. IUI-HH Group 4. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Hamburger menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      var hamburger = document.querySelector('.hamburger');
+      var navbar = document.querySelector('.navbar');
+      if (hamburger && navbar) {
+        hamburger.addEventListener('click', function() {
+          navbar.classList.toggle('open');
+          var expanded = hamburger.getAttribute('aria-expanded') === 'true';
+          hamburger.setAttribute('aria-expanded', !expanded);
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
